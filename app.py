@@ -88,10 +88,11 @@ if st.button("Predict sale price", type="primary"):
             "feature for zoning or building condition, so it can over-value them."
         )
 
-    with st.expander("What this model cannot see"):
+        with st.expander("What this model cannot see"):
         st.write(
             "- Internal floor area, age and condition of the building\n"
             "- Zoning and development potential\n"
-            "- Quality of finishes, street prestige and outlook\n"
+            "- Quality of finishes, street prestige, outlook and proximity to amenities\n"
+            "- The date of sale: the data spans April 2023 to September 2026 but sale date is not a feature\n"
             "- Investment-only apartments, which were removed before training"
         )
