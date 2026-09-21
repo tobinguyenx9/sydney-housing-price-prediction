@@ -14,3 +14,13 @@ manually from Domain.
 | `housing_models.joblib` | Random Forest and Linear Regression trained on all 118 properties |
 
 ## Running the app
+
+pip install streamlit scikit-learn pandas openpyxl joblib
+streamlit run app.py
+
+
+## Results
+
+Random Forest gives the lower typical error (median 10.5% against 12.7%
+for Linear Regression), but under-predicts properties above AUD 2.4M.
+The app shows both models and flags large disagreements.
